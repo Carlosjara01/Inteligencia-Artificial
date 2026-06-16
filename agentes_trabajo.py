@@ -7,7 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1ibMnLV4wzoR7HTRZTSoNGP9QUcqfF3lE
 """
 
-#importar librerías
+1 #importar librerías
+# AVANCE 1 - Importar librerías
+
 # Librerías para manejo de datos
 import pandas as pd
 import numpy as np
@@ -30,27 +32,14 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
 # Métricas de evaluación
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    classification_report,
+    confusion_matrix
+)
 
-# Librería para guardar el modelo
+# Librería para guardar el modelo entrenado
 import joblib
-
-#cargar el dataset
-# Cargar el archivo train.csv
-df = pd.read_csv("train.csv")
-
-# Mostrar las primeras filas del dataset
-df.head()
-
-# revisar tamaño y columnas
-# Mostrar cantidad de filas y columnas
-print("Tamaño del dataset:", df.shape)
-
-# Mostrar nombres de columnas
-print("Columnas del dataset:")
-print(df.columns)
-
-#verificar datos faltantes
-# Revisar valores nulos por columna
-print("Valores nulos por columna:")
-print(df.isnull().sum())
