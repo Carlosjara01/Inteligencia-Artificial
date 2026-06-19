@@ -1,0 +1,13 @@
+
+        REPORTE PRELIMINAR
+
+        El mejor modelo seleccionado fue:
+        Regresión Logística
+
+        Accuracy: 0.9600
+        Precision: 0.9602
+        Recall: 0.9600
+        F1 Score: 0.9600
+
+        El modelo fue seleccionado por obtener el mejor rendimiento general.
+        
